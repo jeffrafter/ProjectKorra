@@ -112,10 +112,10 @@ public class EarthPassive {
 
 						if (block.getData() < 4) {
 							block.setData((byte) (block.getData() + 4));
-							block.getWorld().playSound(block.getLocation(), Sound.DOOR_CLOSE, 10, 1);
+							block.getWorld().playSound(block.getLocation(), Sound.BLOCK_WOODEN_DOOR_CLOSE, 10, 1);
 						} else {
 							block.setData((byte) (block.getData() - 4));
-							block.getWorld().playSound(block.getLocation(), Sound.DOOR_OPEN, 10, 1);
+							block.getWorld().playSound(block.getLocation(), Sound.BLOCK_WOODEN_DOOR_OPEN, 10, 1);
 						}
 
 						bPlayer.addCooldown("MetalPassive", 200);
